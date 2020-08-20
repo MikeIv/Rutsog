@@ -10,7 +10,7 @@
   "header"
   "main"
   "footer";
-  grid-template-rows: 225px 1fr 100px;
+  grid-template-rows: 225px 1fr 365px;
   grid-template-columns: 1fr;
 
   min-height: 100vh;
@@ -19,4 +19,31 @@
   padding: 0;
 
   box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 720px) {
+
+  .page__body{
+    grid-template-rows: 80px 1fr 500px;
+  }
+
+}
+
+
+
+
+@media screen and (min-width: 1020px) {
+
+  .page__body{
+    grid-template-rows: 120px 1fr 800px;
+  }
+
 }
