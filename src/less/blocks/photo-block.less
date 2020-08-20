@@ -1,0 +1,66 @@
+/*-- photo-block --*/
+.photo-block {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+
+  font-family: @font-family-base;
+  font-weight: normal;
+  color: @black;
+
+  background-color: @white;
+
+}
+
+
+.photo-block__wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+  padding-left: 40px;
+  box-sizing: border-box;
+}
+
+.photo-block__col {
+  display: flex;
+  height: 230px;
+
+  margin: 0;
+  padding: 0;
+}
+
+.photo-block__col--left {
+  flex-grow: 1;
+}
+
+.photo-block__col--right {
+  flex: none;
+
+  width: 90px;
+  background-color: @black;
+}
+
+
+.photo-block__image-block {
+  position: absolute;
+  top: calc(50% - 90px);
+  right: 45px;
+
+  width: 275px;
+  height: 180px;
+
+  background-image: url("/img/img-02-mob.jpg");
+}
